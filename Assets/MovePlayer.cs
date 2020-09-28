@@ -5,22 +5,30 @@ using UnityEngine;
 public class MovePlayer : MonoBehaviour
 {
     private bool shouldMove = false;
+    private bool finished = false;
     public float movementSpeed = 2;
     public AudioSource footstepsAudio;
     public GameObject moveButtonObj;
+    public GameObject finishWallObj;
     private Renderer moveButton;
+    private Renderer finishWall;
     
     // Start is called before the first frame update
     void Start() {
         shouldMove = false;
         footstepsAudio = GetComponent<AudioSource>();
         moveButton = moveButtonObj.GetComponent<Renderer>();
+        finishWall = finishWallObj.GetComponent<Renderer>();
     }
 
     void Update()
     {
         if (shouldMove)
             transform.position -= Vector3.forward * movementSpeed * Time.deltaTime;
+        if (!finished && transform.position.z < finishWallObj.transform.position.z + 5) {
+            finished = true;
+            finishWall.material.color = Color.green;
+        }
     }
 
     public void startMovement() {
