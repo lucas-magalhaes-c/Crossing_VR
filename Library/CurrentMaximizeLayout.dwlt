@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 678, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 18428
+  controlID: 20745
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 18429
+  controlID: 20746
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 18430
+  controlID: 20747
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -307,9 +307,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.822833, y: 37.74888, z: -110.48783}
+    m_Target: {x: -0.71290445, y: 37.496124, z: -110.19528}
     speed: 2
-    m_Value: {x: -3.822833, y: 37.74888, z: -110.48783}
+    m_Value: {x: -0.71290445, y: 37.496124, z: -110.19528}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -356,13 +356,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.00022331298, y: -0.9948667, z: 0.10214074, w: 0.0021230709}
+    m_Target: {x: -0.017748527, y: -0.98130727, z: 0.111173645, w: -0.15671806}
     speed: 2
-    m_Value: {x: 0.00022329096, y: -0.9947687, z: 0.102130674, w: 0.0021228616}
+    m_Value: {x: -0.017746761, y: -0.9812096, z: 0.11116258, w: -0.15670246}
   m_Size:
-    m_Target: 3.7330124
+    m_Target: 2.5330126
     speed: 2
-    m_Value: 3.7330124
+    m_Value: 2.5330126
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -522,7 +522,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300000439000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -595,8 +595,8 @@ MonoBehaviour:
     y: 0
     width: 431
     height: 626
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
