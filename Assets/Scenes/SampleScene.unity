@@ -164,7 +164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 482300, guid: 60270cf52a5e94998a5a335989159738, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 482300, guid: 60270cf52a5e94998a5a335989159738, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -275,11 +275,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283507958}
   m_LocalRotation: {x: -0, y: 0.9995933, z: -0, w: -0.02851793}
-  m_LocalPosition: {x: 0.2, y: 0.82, z: 3.4070067}
-  m_LocalScale: {x: 0.49999982, y: 0.5, z: 0.49999982}
+  m_LocalPosition: {x: -0.02, y: 1.9799997, z: 1.98}
+  m_LocalScale: {x: 0.49999973, y: 0.5, z: 0.49999973}
   m_Children: []
-  m_Father: {fileID: 1816839157}
-  m_RootOrder: 1
+  m_Father: {fileID: 963194228}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &283507963
 MonoBehaviour:
@@ -975,6 +975,7 @@ Transform:
   m_LocalPosition: {x: -0.07, y: -1.16, z: 1.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 283507962}
   - {fileID: 117411447}
   m_Father: {fileID: 1816839157}
   m_RootOrder: 0
@@ -1273,7 +1274,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
-  - {fileID: 283507962}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -183.268, z: 0}
@@ -1290,6 +1290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
+  moveButtonHeightDistance: 0.8
   footstepsAudio: {fileID: 1816839159}
   moveButtonObj: {fileID: 283507958}
   finishWallObj: {fileID: 549521337}
