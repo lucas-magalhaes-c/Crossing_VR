@@ -213,7 +213,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283507958}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -577,7 +577,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549521337}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 7bd4f396549be57ac9295b5d3dede69e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -640,7 +640,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549521337}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.83, y: 37.07, z: -242.96}
+  m_LocalPosition: {x: 0.83, y: 37.07, z: -241.22}
   m_LocalScale: {x: 3.9093068, y: 4.858322, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -825,7 +825,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 933892843}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 7bd4f396549be57ac9295b5d3dede69e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1255,6 +1255,8 @@ GameObject:
   - component: {fileID: 1816839157}
   - component: {fileID: 1816839158}
   - component: {fileID: 1816839159}
+  - component: {fileID: 1816839161}
+  - component: {fileID: 1816839160}
   m_Layer: 0
   m_Name: Camera Rig
   m_TagString: Untagged
@@ -1270,7 +1272,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1816839156}
   m_LocalRotation: {x: -0, y: -0.9995933, z: -0, w: -0.02851793}
-  m_LocalPosition: {x: 0.71, y: 38.5, z: -107.19}
+  m_LocalPosition: {x: 0.85, y: 38.5, z: -109.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
@@ -1398,3 +1400,32 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!54 &1816839160
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816839156}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1816839161
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816839156}
+  m_Material: {fileID: 13400000, guid: 7bd4f396549be57ac9295b5d3dede69e, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.5847397, z: 3.2528865}
+  m_Center: {x: 2.3736746e-10, y: -0.15142441, z: 1.1264434}

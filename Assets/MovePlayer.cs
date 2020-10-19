@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovePlayer : MonoBehaviour
 {
     private bool shouldMove = false;
     private bool finished = false;
+    public bool loadNextScene = false;
     public float movementSpeed = 2;
     public float moveButtonHeightDistance = 0.8f;
     public float cameraDefaultFOV = 60.0f;
@@ -23,6 +25,7 @@ public class MovePlayer : MonoBehaviour
     private Camera mainCamera;
     private Renderer moveButton;
     private Renderer finishWall;
+    private Rigidbody playerBody;
     private float wiggleProgress = 0f;
     private float wiggleDirection = 1f;
     
@@ -31,6 +34,7 @@ public class MovePlayer : MonoBehaviour
         shouldMove = false;
         mainCamera = Camera.main;
         footstepsAudio = GetComponent<AudioSource>();
+        playerBody = GetComponent<Rigidbody>();
         moveButton = moveButtonObj.GetComponent<Renderer>();
         finishWall = finishWallObj.GetComponent<Renderer>();
     }
@@ -39,7 +43,18 @@ public class MovePlayer : MonoBehaviour
     void Update() {
         dollyEffect();
         movePlayer();
-        updateFinishWall();
+    }
+
+    void OnCollisionEnter(Collision collision) {
+        endMovement();
+        if (collision.gameObject == finishWallObj) {
+            Debug.Log("Collision with finish wall detected!");
+            finished = true;
+            finishWall.material.color = Color.green;
+            if (loadNextScene)
+                SceneManager.LoadScene("Crevasse", LoadSceneMode.Additive);
+        } else
+            Debug.Log("Collision detected!");
     }
 
     public void startMovement() {
@@ -49,9 +64,12 @@ public class MovePlayer : MonoBehaviour
     }
 
     public void endMovement() {
+        Debug.Log("End movement");
         shouldMove = false;
         footstepsAudio.Pause();
         moveButton.material.color = Color.blue;
+        playerBody.velocity = Vector3.zero;
+        playerBody.angularVelocity = Vector3.zero;
     }
 
     private void movePlayer() {
@@ -65,13 +83,6 @@ public class MovePlayer : MonoBehaviour
         transform.position += new Vector3(newPosition.x, 0, newPosition.z);
     }
 
-    private void updateFinishWall() {
-        if (!finished && transform.position.z < finishWallObj.transform.position.z + 5) {
-            finished = true;
-            finishWall.material.color = Color.green;
-        }
-    }
-
     private void dollyEffect() {
         float cameraYTilt = mainCamera.transform.forward[1];
         moveButton.transform.position = new Vector3(moveButton.transform.position.x, mainCamera.transform.position.y + moveButtonHeightDistance, moveButton.transform.position.z);
@@ -80,7 +91,7 @@ public class MovePlayer : MonoBehaviour
         float newFOVCalculator = constFactor + multFactor * cameraYTilt;
         mainCamera.fieldOfView = Mathf.Max(Mathf.Min(newFOVCalculator, cameraMaxFOV) + dollyEffectWiggle(), cameraDefaultFOV);
         if (mainCamera.fieldOfView > cameraDefaultFOV) {
-            mainCamera.fieldOfView += dollyEffectWiggleMaxVar * Time.deltaTime; //* (2 * Random.value - 1f);
+            mainCamera.fieldOfView += dollyEffectWiggleMaxVar * Time.deltaTime;
         }
     }
 
