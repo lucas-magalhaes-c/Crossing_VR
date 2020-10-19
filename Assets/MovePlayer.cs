@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MovePlayer : MonoBehaviour
 {
-    private bool shouldMove = false;
-    private bool finished = false;
     public bool loadNextScene = false;
     public float movementSpeed = 2;
     public float moveButtonHeightDistance = 0.8f;
@@ -26,6 +24,7 @@ public class MovePlayer : MonoBehaviour
     private Renderer moveButton;
     private Renderer finishWall;
     private Rigidbody playerBody;
+    private bool shouldMove = false;
     private float wiggleProgress = 0f;
     private float wiggleDirection = 1f;
     
@@ -37,19 +36,19 @@ public class MovePlayer : MonoBehaviour
         playerBody = GetComponent<Rigidbody>();
         moveButton = moveButtonObj.GetComponent<Renderer>();
         finishWall = finishWallObj.GetComponent<Renderer>();
+        playerBody.freezeRotation = true;
     }
 
     // Update is called once per frame
     void Update() {
+        playerBody.freezeRotation = true;
         dollyEffect();
         movePlayer();
     }
 
     void OnCollisionEnter(Collision collision) {
-        endMovement();
         if (collision.gameObject == finishWallObj) {
             Debug.Log("Collision with finish wall detected!");
-            finished = true;
             finishWall.material.color = Color.green;
             if (loadNextScene)
                 SceneManager.LoadScene("Crevasse", LoadSceneMode.Additive);
@@ -68,8 +67,6 @@ public class MovePlayer : MonoBehaviour
         shouldMove = false;
         footstepsAudio.Pause();
         moveButton.material.color = Color.blue;
-        playerBody.velocity = Vector3.zero;
-        playerBody.angularVelocity = Vector3.zero;
     }
 
     private void movePlayer() {
