@@ -1291,6 +1291,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 10
   moveButtonHeightDistance: 0.8
+  cameraDefaultFOV: 60
+  cameraMaxFOV: 90
+  dollyEffectTiltInitPoint: -0.2
+  dollyEffectTiltEndPoint: -0.8
+  dollyEffectWiggleMaxVar: 2
+  dollyEffectWiggleSpeed: 1.5
+  dollyEffectEnableWiggle: 1
+  dollyEffectWiggleRandomVar: 0
   footstepsAudio: {fileID: 1816839159}
   moveButtonObj: {fileID: 283507958}
   finishWallObj: {fileID: 549521337}
