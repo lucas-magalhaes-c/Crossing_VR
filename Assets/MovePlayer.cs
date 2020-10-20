@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MovePlayer : MonoBehaviour
 {
     public bool loadNextScene = false;
+    public string nextScene = "Crevasse";
     public float movementSpeed = 2;
     public float moveButtonHeightDistance = 0.8f;
     public float cameraDefaultFOV = 60.0f;
@@ -19,6 +20,7 @@ public class MovePlayer : MonoBehaviour
     public AudioSource footstepsAudio;
     public GameObject moveButtonObj;
     public GameObject finishWallObj;
+    public GameObject deathZone;
 
     private Camera mainCamera;
     private Renderer moveButton;
@@ -51,7 +53,10 @@ public class MovePlayer : MonoBehaviour
             Debug.Log("Collision with finish wall detected!");
             finishWall.material.color = Color.green;
             if (loadNextScene)
-                SceneManager.LoadScene("Crevasse", LoadSceneMode.Additive);
+                SceneManager.LoadSceneAsync(nextScene, LoadSceneMode.Single);
+        } else if (collision.gameObject == deathZone) {
+            Debug.Log("Collisidion with death zone detected!");
+            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
         } else
             Debug.Log("Collision detected!");
     }
