@@ -55,8 +55,11 @@ public class MovePlayer : MonoBehaviour
             if (loadNextScene)
                 SceneManager.LoadSceneAsync(nextScene, LoadSceneMode.Single);
         } else if (collision.gameObject == deathZone) {
-            Debug.Log("Collisidion with death zone detected!");
+            Debug.Log("Collision with death zone detected!");
             SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
+        } else if (collision.gameObject.tag == "Transporter") {
+            Debug.Log("Collision with transporter detected!");
+            endMovement();
         } else
             Debug.Log("Collision detected!");
     }
