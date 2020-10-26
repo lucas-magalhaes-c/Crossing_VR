@@ -9,6 +9,7 @@ public class MovePlayer : MonoBehaviour
     public string nextScene = "Crevasse";
     public float movementSpeed = 2;
     public float moveButtonHeightDistance = 0.8f;
+    public float moveButtonDepthDistance = 2.0f;
     public float cameraDefaultFOV = 60.0f;
     public float cameraMaxFOV = 90.0f;
     public float dollyEffectTiltInitPoint = 0f;
@@ -44,6 +45,8 @@ public class MovePlayer : MonoBehaviour
     // Update is called once per frame
     void Update() {
         playerBody.freezeRotation = true;
+        moveButton.transform.localPosition = new Vector3(0, moveButton.transform.localPosition.y, moveButtonDepthDistance);
+        moveButton.transform.position = new Vector3(moveButton.transform.position.x, mainCamera.transform.position.y + moveButtonHeightDistance, moveButton.transform.position.z);
         dollyEffect();
         movePlayer();
     }
@@ -90,7 +93,6 @@ public class MovePlayer : MonoBehaviour
 
     private void dollyEffect() {
         float cameraYTilt = mainCamera.transform.forward[1];
-        moveButton.transform.position = new Vector3(moveButton.transform.position.x, mainCamera.transform.position.y + moveButtonHeightDistance, moveButton.transform.position.z);
         float multFactor = ((cameraMaxFOV - cameraDefaultFOV) / (dollyEffectTiltEndPoint - dollyEffectTiltInitPoint));
         float constFactor = cameraMaxFOV - multFactor * dollyEffectTiltEndPoint;
         float newFOVCalculator = constFactor + multFactor * cameraYTilt;
