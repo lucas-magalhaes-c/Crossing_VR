@@ -14,9 +14,9 @@ public class Transport : MonoBehaviour
             Debug.Log("Collision with player detected!");
             player = collision.gameObject;
             goalPosition = new Vector3(
-                collision.gameObject.transform.position.x + 8,
-                transform.position.y + 13,
-                collision.gameObject.transform.position.z - 2
+                collision.gameObject.transform.position.x,
+                transform.position.y + 6,
+                collision.gameObject.transform.position.z
             );
             movementVector = goalPosition - player.transform.position;
         }
