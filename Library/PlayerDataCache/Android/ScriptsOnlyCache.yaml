@@ -62,29 +62,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11340}
     - Class: 114
-      Script: {instanceID: 11786}
+      Script: {instanceID: 11788}
     - Class: 114
-      Script: {instanceID: 12070}
+      Script: {instanceID: 12072}
     - Class: 114
-      Script: {instanceID: 12704}
+      Script: {instanceID: 12706}
     - Class: 114
-      Script: {instanceID: 12780}
+      Script: {instanceID: 12782}
     - Class: 114
-      Script: {instanceID: 12798}
+      Script: {instanceID: 12800}
     - Class: 114
-      Script: {instanceID: 12886}
+      Script: {instanceID: 12888}
     - Class: 114
-      Script: {instanceID: 12914}
+      Script: {instanceID: 12916}
     - Class: 114
-      Script: {instanceID: 13054}
+      Script: {instanceID: 13056}
     - Class: 114
-      Script: {instanceID: 13278}
+      Script: {instanceID: 13280}
     - Class: 114
-      Script: {instanceID: 13438}
+      Script: {instanceID: 13440}
     - Class: 114
-      Script: {instanceID: 13468}
+      Script: {instanceID: 13470}
     - Class: 114
-      Script: {instanceID: 15014}
+      Script: {instanceID: 14186}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -478,7 +478,7 @@ ScriptsOnlyBuild:
     className: GvrBetaHeadset
   - hash:
       serializedVersion: 2
-      Hash: 675b8f4ac0342533ac70b990da976a94
+      Hash: 8cce003ad1c6d6505266bb5179351338
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MovePlayer
@@ -815,4 +815,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Crevasse.unity
-  playerPath: C:/Dev Projects - C/Crossing_VR/crossing_vr.apk
+  playerPath: C:/Dev Projects - C/Crossing_VR/crossing_vr2.apk
