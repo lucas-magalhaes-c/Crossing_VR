@@ -62,29 +62,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11340}
     - Class: 114
-      Script: {instanceID: 11788}
+      Script: {instanceID: 11786}
     - Class: 114
-      Script: {instanceID: 12072}
+      Script: {instanceID: 12070}
     - Class: 114
-      Script: {instanceID: 12706}
+      Script: {instanceID: 12704}
     - Class: 114
-      Script: {instanceID: 12782}
+      Script: {instanceID: 12780}
     - Class: 114
-      Script: {instanceID: 12800}
+      Script: {instanceID: 12798}
     - Class: 114
-      Script: {instanceID: 12888}
+      Script: {instanceID: 12886}
     - Class: 114
-      Script: {instanceID: 12916}
+      Script: {instanceID: 12914}
     - Class: 114
-      Script: {instanceID: 13056}
+      Script: {instanceID: 13054}
     - Class: 114
-      Script: {instanceID: 13280}
+      Script: {instanceID: 13278}
     - Class: 114
-      Script: {instanceID: 13440}
+      Script: {instanceID: 13438}
     - Class: 114
-      Script: {instanceID: 13470}
+      Script: {instanceID: 13468}
     - Class: 114
-      Script: {instanceID: 14186}
+      Script: {instanceID: 14294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -96,6 +96,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -815,4 +819,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Crevasse.unity
-  playerPath: C:/Dev Projects - C/Crossing_VR/crossing_vr2.apk
+  playerPath: C:/Dev Projects - C/Crossing_VR/crossing_vr2.1.apk
