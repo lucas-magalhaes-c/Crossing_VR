@@ -5,13 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 457dfb354ef35724ca1b53d32badec6e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Crevasse.unity
     guid: 1eb601f2df7372a4eb7ca2a8d13bdc49
+  - enabled: 1
+    path: Assets/Scenes/Volcano.unity
+    guid: 91ab65d730c440271bb1dff191dfe4bd
   m_configObjects: {}
