@@ -19,6 +19,8 @@ public class MovePlayer : MonoBehaviour
     public bool dollyEffectEnableWiggle = true;
     public bool dollyEffectWiggleRandomVar = false;
     public AudioSource footstepsAudio;
+
+    public AudioSource steelFootstepAudio;
     public GameObject moveButtonObj;
     public GameObject finishWallObj;
     public GameObject deathZone;
@@ -30,6 +32,9 @@ public class MovePlayer : MonoBehaviour
     private bool shouldMove = false;
     private float wiggleProgress = 0f;
     private float wiggleDirection = 1f;
+
+    private string collision_obj_tag;
+
     
     // Start is called before the first frame update
     void Start() {
@@ -62,14 +67,36 @@ public class MovePlayer : MonoBehaviour
             SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
         } else if (collision.gameObject.tag == "Transporter") {
             Debug.Log("Collision with transporter detected!");
-            endMovement();
-        } else
+            // endMovement();
+        } else if (collision.gameObject.tag == "Ladder" || collision.gameObject.tag == "Transporter"){
+            if (steelFootstepAudio != null) {
+                footstepsAudio.Pause();
+                steelFootstepAudio.Play(0);
+                collision_obj_tag="Ladder";
+            }
+        } else {
             Debug.Log("Collision detected!");
+            if(collision_obj_tag != null){
+                if (collision_obj_tag == "Ladder" && steelFootstepAudio != null){
+                    steelFootstepAudio.Pause();
+                    footstepsAudio.Play(0);
+                }
+                collision_obj_tag = null;
+            }
+            
+            // footstepsAudio.Pause();
+        }
     }
 
     public void startMovement() {
         shouldMove = true;
-        footstepsAudio.Play(0);
+        if (collision_obj_tag == null){
+            footstepsAudio.Play(0);
+
+            if (steelFootstepAudio != null)
+                steelFootstepAudio.Pause();
+        }
+            
         moveButton.material.color = Color.red;
     }
 
@@ -77,6 +104,10 @@ public class MovePlayer : MonoBehaviour
         Debug.Log("End movement");
         shouldMove = false;
         footstepsAudio.Pause();
+
+        if (steelFootstepAudio != null)
+            steelFootstepAudio.Pause();
+
         moveButton.material.color = Color.blue;
     }
 
