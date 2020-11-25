@@ -7,6 +7,6 @@ public class Menu : MonoBehaviour
 {
     public void playScene() {
         Debug.Log("Clicked");
-        SceneManager.LoadSceneAsync("SampleScene");
+        SceneManager.LoadSceneAsync("Volcano");
     }
 }
