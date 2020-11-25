@@ -990,7 +990,7 @@ PrefabInstance:
     - target: {fileID: 2451302167631802592, guid: 357b4feaac16a9477b029d8575b5e149,
         type: 3}
       propertyPath: nextScene
-      value: Crevasse
+      value: Volcano
       objectReference: {fileID: 0}
     - target: {fileID: 2451302167631802592, guid: 357b4feaac16a9477b029d8575b5e149,
         type: 3}
