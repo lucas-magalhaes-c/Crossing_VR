@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 1280
-    y: 24
-    width: 1366
-    height: 676
+    x: 0
+    y: 43
+    width: 2560
+    height: 1007
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
+  m_Maximized: 1
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -44,9 +44,9 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1366
-    height: 676
-  m_MinSize: {x: 875, y: 542}
+    width: 2560
+    height: 1007
+  m_MinSize: {x: 875, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -65,7 +65,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1366
+    width: 2560
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -86,8 +86,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 656
-    width: 1366
+    y: 987
+    width: 2560
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -110,21 +110,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-<<<<<<< HEAD
-    width: 1366
-    height: 626
-  m_MinSize: {x: 678, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
-  vertical: 0
-  controlID: 2935
-=======
     width: 2560
     height: 957
-  m_MinSize: {x: 678, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MinSize: {x: 677, y: 471}
+  m_MaxSize: {x: 14000, y: 14021}
   vertical: 0
-  controlID: 91
->>>>>>> 41d1bf0... Change move player to consider steel ladder sound, add environment wind sound, add tents
+  controlID: 8854
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,16 +135,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 935
-    height: 626
-  m_MinSize: {x: 403, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
+    width: 1752
+    height: 957
+  m_MinSize: {x: 402, y: 471}
+  m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
-<<<<<<< HEAD
-  controlID: 2936
-=======
-  controlID: 92
->>>>>>> 41d1bf0... Change move player to consider steel ladder sound, add environment wind sound, add tents
+  controlID: 8785
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,16 +160,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 935
-    height: 282
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+    width: 1752
+    height: 686
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-<<<<<<< HEAD
-  controlID: 2937
-=======
-  controlID: 93
->>>>>>> 41d1bf0... Change move player to consider steel ladder sound, add environment wind sound, add tents
+  controlID: 8786
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -200,8 +183,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 314
-    height: 282
+    width: 588
+    height: 686
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
@@ -224,10 +207,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 314
+    x: 588
     y: 0
-    width: 621
-    height: 282
+    width: 1164
+    height: 686
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
@@ -253,9 +236,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 282
-    width: 935
-    height: 344
+    y: 686
+    width: 1752
+    height: 271
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 17}
@@ -279,19 +262,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 935
+    x: 1752
     y: 0
-<<<<<<< HEAD
-    width: 431
-    height: 626
+    width: 808
+    height: 957
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-=======
-    width: 451
-    height: 957
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
->>>>>>> 41d1bf0... Change move player to consider steel ladder sound, add environment wind sound, add tents
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -319,10 +295,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 315
+    x: 589
     y: 19
-    width: 619
-    height: 261
+    width: 1162
+    height: 665
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -332,7 +308,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 619, y: 240}
+  m_TargetSize: {x: 1162, y: 644}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -347,10 +323,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -683
-    m_HBaseRangeMax: 683
-    m_VBaseRangeMin: -293
-    m_VBaseRangeMax: 293
+    m_HBaseRangeMin: -1280
+    m_HBaseRangeMax: 1280
+    m_VBaseRangeMin: -458.5
+    m_VBaseRangeMax: 458.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -368,23 +344,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1366
-      height: 586
+      width: 2560
+      height: 917
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 683, y: 293}
+    m_Translation: {x: 1280, y: 458.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -683
-      y: -293
-      width: 1366
-      height: 586
+      x: -1280
+      y: -458.5
+      width: 2560
+      height: 917
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1366, y: 607}
+  m_LastWindowPixelSize: {x: 2560, y: 938}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -436,23 +412,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1280
-    y: 82
-    width: 313
-    height: 261
+    x: 0
+    y: 73
+    width: 587
+    height: 665
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-      m_SelectedIDs: 0ed8ffff
-      m_LastClickedID: -10226
-      m_ExpandedIDs: 34c8ffff48c8ffff54ddffff58ddffff903b0000685c0000d65c0000
-=======
-      m_SelectedIDs: fc8b0000
-      m_LastClickedID: 35836
-      m_ExpandedIDs: 42cfffff54cfffffa4e5ffff58f2ffff86f7ffffdcf8ffffdef8ffff9e3600002c8c0000ce8c0000248d0000
->>>>>>> 41d1bf0... Change move player to consider steel ladder sound, add environment wind sound, add tents
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 948fffffae8fffff9490ffff5a95ffffa295fffff09fffff06a0ffff94a7ffffaca7ffff14a9ffff2ea9fffff8abfffffcabffff02acffffc4afffff46b8ffff00c9ffff1ac9ffffe4cbffff74d0ffffc0d0ffffc6d0ffffbae0ffffbce0ffffbee0ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -468,7 +438,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 8}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -497,10 +467,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 619
-    height: 261
+    x: 588
+    y: 73
+    width: 1162
+    height: 665
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 532ce211cce8e6f43ae7b46a3b64023d
@@ -512,15 +482,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< HEAD
-    m_Target: {x: 20.103603, y: 47.29951, z: -115.94367}
+    m_Target: {x: -5.6483006, y: 38.93397, z: -118.43215}
     speed: 2
-    m_Value: {x: 20.103603, y: 47.29951, z: -115.94367}
-=======
-    m_Target: {x: -65.55769, y: -42.730843, z: -61.246265}
-    speed: 2
-    m_Value: {x: -65.55769, y: -42.730843, z: -61.246265}
->>>>>>> 41d1bf0... Change move player to consider steel ladder sound, add environment wind sound, add tents
+    m_Value: {x: -5.6483006, y: 38.93397, z: -118.43215}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -566,23 +530,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-<<<<<<< HEAD
-    m_Target: {x: 0.07104452, y: 0.72205913, z: -0.07501337, w: 0.68408847}
+    m_Target: {x: -0.024344608, y: 0.94787455, z: -0.3088633, w: -0.07465145}
     speed: 2
-    m_Value: {x: 0.07104452, y: 0.72205913, z: -0.07501337, w: 0.6840884}
+    m_Value: {x: -0.024344608, y: 0.9478746, z: -0.3088633, w: -0.07465145}
   m_Size:
-    m_Target: 1.351007
+    m_Target: 1.4555161
     speed: 2
-    m_Value: 1.351007
-=======
-    m_Target: {x: 0.09614725, y: -0.8890846, z: 0.2189857, w: 0.39033246}
-    speed: 2
-    m_Value: {x: 0.09673117, y: -0.88874185, z: 0.22031583, w: 0.390182}
-  m_Size:
-    m_Target: 51.74833
-    speed: 2
-    m_Value: 49.51993
->>>>>>> 41d1bf0... Change move player to consider steel ladder sound, add environment wind sound, add tents
+    m_Value: 1.4555161
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -654,10 +608,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1280
-    y: 364
-    width: 934
-    height: 323
+    x: 0
+    y: 759
+    width: 1751
+    height: 250
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -672,27 +626,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Sounds
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Sounds
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: /media/HDD2TB/home/Documents/Poli-USP/Quadri 9/Tecnologias Interativas/Projeto/projeto
+  m_LastProjectPath: C:\Dev Projects - C\Crossing_VR
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-<<<<<<< HEAD
-    scrollPos: {x: 0, y: 73}
-    m_SelectedIDs: 283d0000
-    m_LastClickedID: 15656
-    m_ExpandedIDs: 00000000063d0000083d00000a3d00000c3d00000e3d0000103d0000123d000000ca9a3b
-=======
-    scrollPos: {x: 0, y: 31}
-    m_SelectedIDs: 90390000
-    m_LastClickedID: 14736
-    m_ExpandedIDs: 00000000683900006a3900006c3900006e39000070390000723900007439000000ca9a3b
->>>>>>> 41d1bf0... Change move player to consider steel ladder sound, add environment wind sound, add tents
+    scrollPos: {x: 0, y: 206}
+    m_SelectedIDs: 9a3b0000
+    m_LastClickedID: 15258
+    m_ExpandedIDs: 00000000723b0000743b0000763b0000783b00007a3b00007c3b00007e3b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -720,11 +667,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
-    m_ExpandedIDs: 00000000063d0000083d00000a3d00000c3d00000e3d0000103d0000123d000000ca9a3b
-=======
-    m_ExpandedIDs: 00000000683900006a3900006c3900006e390000703900007239000074390000
->>>>>>> 41d1bf0... Change move player to consider steel ladder sound, add environment wind sound, add tents
+    m_ExpandedIDs: 00000000723b0000743b0000763b0000783b00007a3b00007c3b00007e3b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -779,7 +722,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 115
+  m_DirectoriesAreaWidth: 200
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -802,9 +745,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 759
-    width: 2108
-    height: 250
+    y: 754
+    width: 2052
+    height: 255
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &19
 MonoBehaviour:
@@ -827,10 +770,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2215
-    y: 82
-    width: 430
-    height: 605
+    x: 1752
+    y: 73
+    width: 807
+    height: 936
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
