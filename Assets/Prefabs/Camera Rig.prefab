@@ -301,6 +301,7 @@ MonoBehaviour:
   dollyEffectEnableWiggle: 1
   dollyEffectWiggleRandomVar: 0
   footstepsAudio: {fileID: 2451302167631802593}
+  steelFootstepAudio: {fileID: 0}
   moveButtonObj: {fileID: 2451302165679542240}
   finishWallObj: {fileID: 0}
   deathZone: {fileID: 0}

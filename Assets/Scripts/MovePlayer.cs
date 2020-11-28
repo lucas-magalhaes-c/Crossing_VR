@@ -68,7 +68,7 @@ public class MovePlayer : MonoBehaviour
         } else if (collision.gameObject.tag == "Transporter") {
             Debug.Log("Collision with transporter detected!");
             // endMovement();
-        } else if (collision.gameObject.tag == "Ladder" || collision.gameObject.tag == "Transporter"){
+        } else if (collision.gameObject.tag == "Ladder" || collision.gameObject.tag == "Transporter") {
             if (steelFootstepAudio != null) {
                 footstepsAudio.Pause();
                 steelFootstepAudio.Play(0);
@@ -77,7 +77,7 @@ public class MovePlayer : MonoBehaviour
         } else {
             Debug.Log("Collision detected!");
             if(collision_obj_tag != null){
-                if (collision_obj_tag == "Ladder" && steelFootstepAudio != null){
+                if (collision_obj_tag == "Ladder" && steelFootstepAudio != null) {
                     steelFootstepAudio.Pause();
                     footstepsAudio.Play(0);
                 }
@@ -97,7 +97,7 @@ public class MovePlayer : MonoBehaviour
                 steelFootstepAudio.Pause();
         }
             
-        moveButton.material.color = Color.red;
+        moveButton.material.color = new Color(1, 0, 0, 0.2f);
     }
 
     public void endMovement() {
@@ -108,7 +108,7 @@ public class MovePlayer : MonoBehaviour
         if (steelFootstepAudio != null)
             steelFootstepAudio.Pause();
 
-        moveButton.material.color = Color.blue;
+        moveButton.material.color = new Color(0, 0, 1, 0.2f);
     }
 
     private void movePlayer() {
