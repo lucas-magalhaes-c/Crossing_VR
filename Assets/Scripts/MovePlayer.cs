@@ -29,7 +29,8 @@ public class MovePlayer : MonoBehaviour
     private Renderer moveButton;
     private Renderer finishWall;
     private Rigidbody playerBody;
-    private bool shouldMove = false;
+    private bool isMoving = false;
+    private bool shouldMove = true;
     private float wiggleProgress = 0f;
     private float wiggleDirection = 1f;
 
@@ -38,7 +39,7 @@ public class MovePlayer : MonoBehaviour
     
     // Start is called before the first frame update
     void Start() {
-        shouldMove = false;
+        isMoving = false;
         mainCamera = Camera.main;
         footstepsAudio = GetComponent<AudioSource>();
         playerBody = GetComponent<Rigidbody>();
@@ -72,10 +73,10 @@ public class MovePlayer : MonoBehaviour
             if (steelFootstepAudio != null) {
                 footstepsAudio.Pause();
                 steelFootstepAudio.Play(0);
-                collision_obj_tag="Ladder";
+                collision_obj_tag = "Ladder";
             }
         } else {
-            Debug.Log("Collision detected!");
+            // Debug.Log("Collision detected!");
             if(collision_obj_tag != null){
                 if (collision_obj_tag == "Ladder" && steelFootstepAudio != null) {
                     steelFootstepAudio.Pause();
@@ -89,7 +90,9 @@ public class MovePlayer : MonoBehaviour
     }
 
     public void startMovement() {
-        shouldMove = true;
+        if (!shouldMove) return;
+
+        isMoving = true;
         if (collision_obj_tag == null){
             footstepsAudio.Play(0);
 
@@ -101,8 +104,8 @@ public class MovePlayer : MonoBehaviour
     }
 
     public void endMovement() {
-        Debug.Log("End movement");
-        shouldMove = false;
+        // Debug.Log("End movement");
+        isMoving = false;
         footstepsAudio.Pause();
 
         if (steelFootstepAudio != null)
@@ -111,8 +114,25 @@ public class MovePlayer : MonoBehaviour
         moveButton.material.color = new Color(0, 0, 1, 0.2f);
     }
 
+    public void stopPlayerMovement() {
+        shouldMove = false;
+        isMoving = false;
+    }
+
+    public void allowPlayerMovement() {
+        shouldMove = true;
+    }
+
+    public void disablePlayerGravity() {
+        playerBody.useGravity = false;
+    }
+
+    public void enablePlayerGravity() {
+        playerBody.useGravity = true;
+    }
+
     private void movePlayer() {
-        if (!shouldMove) return;
+        if (!isMoving) return;
         
         Vector3 newPosition;
         newPosition = mainCamera.transform.TransformDirection(new Vector3(
