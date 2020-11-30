@@ -544,6 +544,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2480063352688024452, guid: 9643898593b010142a9471327792f59f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 77f09635dd34b844e9a5ef0e4e69b332,
+        type: 3}
     - target: {fileID: 2480063353574592770, guid: 9643898593b010142a9471327792f59f,
         type: 3}
       propertyPath: m_RenderMode
@@ -688,6 +694,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CullTransparentMesh
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2480063353810783938, guid: 9643898593b010142a9471327792f59f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -105.7
       objectReference: {fileID: 0}
     - target: {fileID: 2480063353810783939, guid: 9643898593b010142a9471327792f59f,
         type: 3}

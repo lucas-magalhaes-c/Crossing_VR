@@ -3,12 +3,42 @@ guid: 00540bc904856f94b9044e57fcfba7db
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crevasse_level
+    second: {fileID: 4878139888882107825, guid: 443272a5d94864f40a8cf02ca5592199,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Frozen-Ice
+    second: {fileID: -6455105619571776717, guid: 443272a5d94864f40a8cf02ca5592199,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Frozen-Ice.003
+    second: {fileID: 7747944303688381348, guid: 443272a5d94864f40a8cf02ca5592199,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: -3846018093981099296, guid: 443272a5d94864f40a8cf02ca5592199,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 4874126678125670354, guid: 443272a5d94864f40a8cf02ca5592199,
+      type: 3}
   materials:
     materialImportMode: 1
-    materialName: 0
+    materialName: 1
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0

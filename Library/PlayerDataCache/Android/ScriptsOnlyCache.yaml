@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CableCarTransport
     - GvrEditorEmulator
     - GvrPointerGraphicRaycaster
     - GvrPointerInputModule
@@ -55,34 +56,40 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11346}
+      Script: {instanceID: 11342}
     - Class: 114
-      Script: {instanceID: 11794}
+      Script: {instanceID: 11790}
     - Class: 114
-      Script: {instanceID: 12712}
+      Script: {instanceID: 12708}
     - Class: 114
-      Script: {instanceID: 12894}
+      Script: {instanceID: 12890}
     - Class: 114
-      Script: {instanceID: 12922}
+      Script: {instanceID: 12918}
     - Class: 114
-      Script: {instanceID: 13060}
+      Script: {instanceID: 13058}
     - Class: 114
-      Script: {instanceID: 13444}
+      Script: {instanceID: 13442}
     - Class: 114
-      Script: {instanceID: 13474}
+      Script: {instanceID: 13472}
     - Class: 114
-      Script: {instanceID: 16176}
+      Script: {instanceID: 14420}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 134
@@ -121,41 +128,41 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 11340}
+    - Class: 114
+      Script: {instanceID: 11342}
+    - Class: 114
       Script: {instanceID: 11344}
     - Class: 114
-      Script: {instanceID: 11346}
+      Script: {instanceID: 11600}
     - Class: 114
-      Script: {instanceID: 11348}
+      Script: {instanceID: 11790}
     - Class: 114
-      Script: {instanceID: 11604}
+      Script: {instanceID: 12074}
     - Class: 114
-      Script: {instanceID: 11794}
+      Script: {instanceID: 12302}
     - Class: 114
-      Script: {instanceID: 12078}
+      Script: {instanceID: 12784}
     - Class: 114
-      Script: {instanceID: 12306}
+      Script: {instanceID: 12802}
     - Class: 114
-      Script: {instanceID: 12788}
+      Script: {instanceID: 12918}
     - Class: 114
-      Script: {instanceID: 12806}
+      Script: {instanceID: 13030}
     - Class: 114
-      Script: {instanceID: 12922}
+      Script: {instanceID: 13058}
     - Class: 114
-      Script: {instanceID: 13032}
+      Script: {instanceID: 13102}
     - Class: 114
-      Script: {instanceID: 13060}
+      Script: {instanceID: 13282}
     - Class: 114
-      Script: {instanceID: 13104}
+      Script: {instanceID: 13296}
     - Class: 114
-      Script: {instanceID: 13284}
+      Script: {instanceID: 13406}
     - Class: 114
-      Script: {instanceID: 13298}
+      Script: {instanceID: 13442}
     - Class: 114
-      Script: {instanceID: 13408}
-    - Class: 114
-      Script: {instanceID: 13444}
-    - Class: 114
-      Script: {instanceID: 13474}
+      Script: {instanceID: 13472}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -208,19 +215,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11346}
+      Script: {instanceID: 11342}
     - Class: 114
-      Script: {instanceID: 11794}
+      Script: {instanceID: 11436}
     - Class: 114
-      Script: {instanceID: 12712}
+      Script: {instanceID: 11790}
     - Class: 114
-      Script: {instanceID: 12922}
+      Script: {instanceID: 12708}
     - Class: 114
-      Script: {instanceID: 13060}
+      Script: {instanceID: 12918}
     - Class: 114
-      Script: {instanceID: 13444}
+      Script: {instanceID: 13058}
     - Class: 114
-      Script: {instanceID: 13474}
+      Script: {instanceID: 13442}
+    - Class: 114
+      Script: {instanceID: 13472}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 134
@@ -290,6 +299,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: db4d84d82ad23a5b222d8719ca227195
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CableCarTransport
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -949,4 +964,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Crevasse.unity
   - Assets/Scenes/Volcano.unity
-  playerPath: C:/Dev Projects - C/Crossing_VR/crossing_vr2.2.apk
+  playerPath: C:/Dev Projects - C/Crossing_VR/crossing_vr2.4.apk
